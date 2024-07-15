@@ -1,0 +1,47 @@
+.best {
+    background: url('../../img/best.jpg') center center/cover no-repeat;
+    text-align: center;
+    padding: 80px 0 110px 0;
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    &__item {
+        width: 220px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 20px;
+        justify-content: end;
+
+        img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h3{
+            font-size: 14px;
+            font-weight: normal;
+            margin: 5px 0;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
