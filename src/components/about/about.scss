@@ -1,6 +1,7 @@
 .about {
     text-align: center;
-    width: 590px;
-    margin: 80px auto 100px auto;
 
+    &__padding {
+        margin: 80px auto 100px auto;
+    }
 }

@@ -5,7 +5,7 @@ import './header.scss';
 const Header = (props) => {
 
     return (
-        <div className='header__section'>
+        <div className='header__section' style={{background: `url('./res/img/${props.img}.jpg') center center/cover no-repeat`}}>
             <header className='header'>
                 <Links/>
             </header>

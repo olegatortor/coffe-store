@@ -1,0 +1,13 @@
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 70px 0 80px 0;
+
+    img:first-child {
+        width: 270px;
+        height: 380px;
+        object-fit: cover;
+    }
+}
