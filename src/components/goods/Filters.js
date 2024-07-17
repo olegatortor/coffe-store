@@ -7,6 +7,13 @@ const Filters = ({setProducts, clearProductsList, searchData}) => {
     const [term, setTerm] = useState('');
 
     const changeList = (country) => {
+        if(activityBtn === country) {
+            clearList()
+            setActivityBtn(null)
+            return setProducts('all')
+            
+        }
+
         setActivityBtn(country)
         setProducts(country)
     }

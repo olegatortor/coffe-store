@@ -45,3 +45,9 @@ a {
 footer {
   padding-top: 30px;
 }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
