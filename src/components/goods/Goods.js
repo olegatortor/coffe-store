@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
-import { useHttp } from '../../hooks/http.hook';
 
+import useMainServices from '../../services/MainServices';
 import Filters from './Filters';
 import Product from './Product';
 import ErrorMessage from '../errorMessage/ErrorMessage';
@@ -9,23 +9,26 @@ import './goods.scss'
 import Spinner from '../spinner/Spinner';
 
 const Goods = () => {
-    const [error, request, loading, clearError] = useHttp();
+    const {error, loading, clearError, getAllProducts} = useMainServices();
+
     const [allProducts, setallProducts] = useState([]);
     const [goods, setGoods] = useState([]);
     const [searchItem, setSearchItem] = useState('');
     const [country, setCountry] = useState('all');
 
-    const getRequest = useCallback( async() => {
-      clearError()
+    const getRequest = useCallback(() => {
       try {
-        const res = await request('./db.json')
-                          .then(res => res.products)
-        setallProducts(res)
-        setGoods(res)
+        getAllProducts().then(onChangeList)
       } catch(e) {
         console.error(e)
       }
-    }, [request, clearError])
+    }, [clearError])
+
+    const onChangeList = (products) => {
+        clearError()
+        setallProducts(products)
+        setGoods(products)
+    }
     
     useEffect(() => {
       getRequest()

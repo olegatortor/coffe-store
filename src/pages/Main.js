@@ -4,7 +4,7 @@ import About from '../components/about/About';
 import Best from '../components/best/Best';
 import Footer from '../components/footer/Footer';
 
-function App() {
+const Main = () => {
 
   const bestProducts = [
     {
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <Header img='promo'>
+      <Header img='./res/img/promo.jpg'>
         <div className="header__relative">
           <div className="header__main">
             <h1>Everything You Love About Coffee</h1>
@@ -61,4 +61,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

@@ -7,13 +7,11 @@ export const useHttp = () => {
     
     const request = useCallback(async (url) => {
         setLoading(true)
-        setLoading(null)
-
+        setError(null)
 
         try {
             let response = await fetch(url);
             let data = await response.json();
-
             setLoading(false)
 
             return data;
@@ -21,6 +19,7 @@ export const useHttp = () => {
             setLoading(false)
             setError(e.message);
             throw e;
+            
         }
     })
 

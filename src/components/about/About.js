@@ -9,9 +9,9 @@ const About = (props) => {
         <section className={"about " + clazz} style={{width: `${props.width}px`}}>
             <h1>{props.title}</h1>
             <Beans/>
-            <p>
+            <div>
                 {props.children}
-            </p>
+            </div>
         </section>
     )
 }

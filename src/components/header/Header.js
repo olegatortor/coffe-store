@@ -5,11 +5,11 @@ import './header.scss';
 const Header = (props) => {
 
     return (
-        <div className='header__section' style={{background: `url('./res/img/${props.img}.jpg') center center/cover no-repeat`}}>
+        <div className='header__section' style={{background: `url('${props.img}') center center/cover no-repeat`}}>
             <header className='header'>
                 <Links/>
             </header>
-
+            
             {props.children}
         </div>
     )

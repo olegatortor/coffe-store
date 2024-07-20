@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+
+    div > span, p > span {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+}

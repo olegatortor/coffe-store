@@ -5,63 +5,72 @@
             "name": "Solimo Coffee Beans 2 kg",
             "src": "best1",
             "country": "Kenya",
-            "price": 10.73
+            "price": 10.73,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 2,
             "name": "Presto Coffee Beans 1 kg",
             "src": "best2",
             "country": "Kenya",
-            "price": 15.99
+            "price": 15.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 3,
             "name": "AROMISTICO Coffee 1 kg",
             "src": "best3",
             "country": "Brazil",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 4,
             "name": "BROMISTICO Coffee 1 kg",
             "src": "best1",
             "country": "Columbia",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 5,
             "name": "BROMISTICO Coffee 1 kg",
             "src": "best3",
             "country": "Brazil",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 6,
             "name": "ISTICO Coffee 1 kg",
             "src": "best2",
             "country": "Kenya",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 7,
             "name": "AROMIS Coffee 1 kg",
             "src": "best2",
             "country": "Kenya",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 8,
             "name": "AROO Coffee 1 kg",
             "src": "best1",
             "country": "Brazil",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
             "id": 9,
             "name": "ICO Coffee 1 kg",
             "src": "best3",
             "country": "Columbia",
-            "price": 6.99
+            "price": 6.99,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         }
     ]
 }
