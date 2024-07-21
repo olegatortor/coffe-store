@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f6f2;
 }
 
 code {
@@ -17,11 +18,16 @@ code {
     monospace;
 }
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .beans {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 35px 0;
+  margin: 10px 0 10px 0;
   div {
     width: 60px;
     height: 1px;

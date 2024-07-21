@@ -8,8 +8,8 @@ const Filters = ({setProducts, clearProductsList, searchData}) => {
 
     const changeList = (country) => {
         if(activityBtn === country) {
-            clearList()
-            setActivityBtn(null)
+            clearList();
+            setActivityBtn(null);
             return setProducts('all')
             
         }

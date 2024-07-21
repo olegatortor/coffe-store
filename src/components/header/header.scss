@@ -1,53 +1,20 @@
 .header {
-    position: absolute;
-    top: 30px;
-    left: 150px;
-    font-size: 12px;
-    z-index: 10;
+    font-size: 16px;
+    background-color: #fff;
 
-    &__relative {
-        position: relative;
-        height: 640px;
-        
-
-        &-mini {
-            height: 260px;
-        }
-    }
-
-    &__main {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 24px;
-
-        h1 {
-            font-size: 40px;
-        }
-
-        button {
-            font-size: 14px;
-            background-color: unset;
-            border: 1px solid #fff;
-            color: white;
-            width: 120px;
-            height: 30px;
-            text-align: center;
-        }
-
-        button {
-            margin-top: 20px;
-            cursor: pointer;
-        }
+    .logo {
+        font-size: 36px;
+        text-transform: uppercase;
     }
 }
 
 ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
+    height: 80px;
+    width: 1140px;
+    margin: 0 auto;
 
     li {
         margin-right: 40px;
@@ -57,14 +24,84 @@ ul {
     }
 
     a {
-        color: #fff;
+        color: #000000;
+        font-weight: bold;
+        transition: all .2s;
+
+        &:hover {
+            color: #7a7a7a;
+        }
     }
-}
-.black a {
-    color: #000;
 }
 
 nav {
     display: flex;
     justify-content: center;
+}
+
+.promo {
+    &__relative {
+        position: relative;
+        margin: 30px 0;
+        background-color: #fff;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-mini {
+            height: 260px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    
+
+    &__btns {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+            min-width: 140px;
+            height: 30px;
+            color: rgb(255, 255, 255);
+            background-color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        &-signin {
+            background-color: unset !important;
+            color: rgb(0, 0, 0) !important;
+            border: 1px solid #000000 !important;
+            text-align: center;
+        }
+    }
+
+    &__main {
+        padding: 70px 50px;
+        color: #000000;
+        font-size: 24px;
+
+        .beans {
+            justify-content: start;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-transform: lowercase;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
 }

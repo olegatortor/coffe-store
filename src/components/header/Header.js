@@ -2,15 +2,13 @@ import Links from './Links';
 
 import './header.scss';
 
-const Header = (props) => {
+const Header = () => {
 
     return (
-        <div className='header__section' style={{background: `url('${props.img}') center center/cover no-repeat`}}>
+        <div className='header__section'>
             <header className='header'>
                 <Links/>
             </header>
-            
-            {props.children}
         </div>
     )
 }

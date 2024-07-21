@@ -3,10 +3,10 @@ import { useCallback, useEffect, useState } from 'react';
 import useMainServices from '../../services/MainServices';
 import Filters from './Filters';
 import Product from './Product';
-import ErrorMessage from '../errorMessage/ErrorMessage';
+
+import withLoadingAndError from '../hoc/withLoadingAndError';
 
 import './goods.scss'
-import Spinner from '../spinner/Spinner';
 
 const Goods = () => {
     const {error, loading, clearError, getAllProducts} = useMainServices();
@@ -57,16 +57,13 @@ const Goods = () => {
 
     const clearProductsList = () => {
       setGoods(allProducts);
-      setSearchItem('');
     }
 
     const searchData = (term) => {
       setSearchItem(term)
     }
 
-    const load = loading ? <Spinner/> : null;
-    const problem = error ? <ErrorMessage/> : null;
-    const items = !loading && !error ? <View goods={goods}/> : null;
+    const ViewWithLoadingAndError = withLoadingAndError(View)
 
     return(
         <>
@@ -74,10 +71,9 @@ const Goods = () => {
                      clearProductsList={clearProductsList}
                      searchData={searchData}/>
                      
-            
-            {load}
-            {problem}
-            {items}
+            {<ViewWithLoadingAndError  goods={goods}
+                                       loading={loading}
+                                       error={error}/>}
         </>
     )
 };

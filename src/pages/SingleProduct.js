@@ -7,8 +7,10 @@ import Info from '../components/info/Info';
 import Card from '../components/card/Card';
 import Footer from '../components/footer/Footer';
 
+import withLoadingAndError from "../components/hoc/withLoadingAndError";
+
 const SingleProduct = () => {
-    const {error, loading, clearError, getSoloProducts, getAllProducts} = useMainServices();
+    const {error, loading, clearError, getSoloProducts} = useMainServices();
     const {productsId} = useParams();
 
     const [product, setProduct] = useState({})
@@ -30,7 +32,8 @@ const SingleProduct = () => {
         getRequest()
     }, [])
 
-    // console.log(product)
+
+    const ViewWithLoadingAndError = withLoadingAndError(View)
 
     return (
         <>
@@ -44,15 +47,25 @@ const SingleProduct = () => {
 
             <Link to='../products' className="back">BACK</Link>
 
-            <Info component={<Card
-                            country={product.country}
-                            desc={product.description}
-                            price={product.price}/>}
-                  img={`../res/img/${product.src}.jpg`}/>
+            <ViewWithLoadingAndError product={product}
+                                     error={error}
+                                     loading={loading}/>
 
             <Footer/>
         </>
     )
+}
+
+const View = ({product}) => {
+    return(
+      <>
+          <Info component={<Card
+                            country={product.country}
+                            desc={product.description}
+                            price={product.price}/>}
+                            img={`../res/img/${product.src}.jpg`}/>
+      </>
+  )
 }
 
 export default SingleProduct
